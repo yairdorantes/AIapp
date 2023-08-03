@@ -13,7 +13,9 @@ app.post("/image", async (req, res) => {
   // console.log(response);
   res.send({ image: response });
 });
-
+app.get("/", (req, res) => {
+  res.send("Hello world!");
+});
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
