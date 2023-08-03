@@ -5,7 +5,7 @@ import { createImage } from "./OpenAI.js";
 const app = express();
 app.use(cors());
 app.use(express.json());
-const port = 3000; // You can use any port you prefer
+const port = 7000; // You can use any port you prefer
 app.post("/image", async (req, res) => {
   const data = req.body.text;
   console.log(data);
